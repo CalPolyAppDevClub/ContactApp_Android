@@ -38,3 +38,19 @@ captures/
 
 # Keystore files
 *.jks
+
+# Vim files
+
+# Vim swap files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# Vim session
+Session.vim
+
+# Vim temporary
+.netrwhist
+*~
+
+# Vim auto-generated tag files
+tags
