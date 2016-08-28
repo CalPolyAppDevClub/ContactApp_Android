@@ -13,12 +13,12 @@ import com.example.kris.contactapp.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link AppMake.OnFragmentInteractionListener} interface
+ * {@link WhatPlatformFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link AppMake#newInstance} factory method to
+ * Use the {@link WhatPlatformFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AppMake extends Fragment {
+public class WhatPlatformFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +30,7 @@ public class AppMake extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public AppMake() {
+    public WhatPlatformFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +40,11 @@ public class AppMake extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AppMake.
+     * @return A new instance of fragment WhatPlatformFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AppMake newInstance(String param1, String param2) {
-        AppMake fragment = new AppMake();
+    public static WhatPlatformFragment newInstance(String param1, String param2) {
+        WhatPlatformFragment fragment = new WhatPlatformFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +65,7 @@ public class AppMake extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_app_make, container, false);
+        return inflater.inflate(R.layout.fragment_what_platform, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
