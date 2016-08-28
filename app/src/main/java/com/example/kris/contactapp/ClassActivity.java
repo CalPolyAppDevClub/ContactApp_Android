@@ -3,6 +3,7 @@ package com.example.kris.contactapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 /**
  * Created by kid on 8/27/16.
  */
-public class ClassActivity extends Activity{
+public class ClassActivity extends AppCompatActivity {
 
     protected SeekBar seekBar;
     protected Button goButton;

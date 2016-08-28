@@ -3,6 +3,7 @@ package com.example.kris.contactapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 /**
  * Created by kid on 8/27/16.
  */
-public class EmailActivity extends Activity {
+public class EmailActivity extends AppCompatActivity {
 
     protected Button goButton;
     protected EditText emailText;
