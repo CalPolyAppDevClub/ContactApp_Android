@@ -2,12 +2,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kris.contactapp.fragments.SodaFragment">
+    tools:context="com.example.kris.contactapp.fragments.PizzaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Soda"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="28dp"
+        />
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pizza_edit_text"
+        android:hint="We will try to have your favorite at the first meeting"
+        android:textSize="16dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizza_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="@string/go"/>
 
 </FrameLayout>
