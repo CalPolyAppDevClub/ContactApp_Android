@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Contact App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome_fragment">Welcome!!</string>
+    <string name="emails">Email?</string>
+    <string name="name">Name?</string>
+    <string name="year">Class Standing</string>
 </resources>
