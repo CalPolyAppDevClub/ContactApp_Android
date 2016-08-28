@@ -2,37 +2,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kris.contactapp.fragments.NameFragment">
+    tools:context="com.example.kris.contactapp.fragments.PizzaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:layout_marginLeft="130dp"
+        android:text="Favorite Pizza"
         android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:layout_marginLeft="100dp"
         android:textSize="28dp"
-        android:padding="15dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/first_name_edit_text"
-        android:layout_gravity="center"
-        android:hint="First Name"
         />
     <EditText
-        android:id="@+id/last_name_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:hint="Last Name"/>
+        android:id="@+id/pizza_edit_text"
+        android:hint="We will try to have your favorite at the first meeting"
+        android:textSize="16dp"
+        />
     <Button
-        android:id="@+id/name_next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/pizza_button"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:text="@string/go"/>
 
 </FrameLayout>

@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:textSize="26dp"
         android:text="What do you want to write app for?"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:padding="17dp"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
