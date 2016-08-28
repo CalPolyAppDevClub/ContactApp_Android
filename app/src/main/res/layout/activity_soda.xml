@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pizza_button"
+        android:id="@+id/btn_soda"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:text="@string/go"/>
