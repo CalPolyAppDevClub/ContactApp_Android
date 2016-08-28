@@ -16,9 +16,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".DoneActivity" />
+        <activity android:name=".EmailActivity"/>
+        <activity android:name=".ClassActivity"/>
+        <activity android:name=".NameActivity"/>
         <activity android:name=".SodaActivity" />
         <activity android:name=".PizzaActivity" />
-        <activity android:name=".WhatPlatformActivity"></activity>
+        <activity android:name=".WhatPlatformActivity">
+        </activity>
     </application>
 
 </manifest>
