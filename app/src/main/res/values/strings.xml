@@ -6,4 +6,6 @@
     <string name="emails">Email?</string>
     <string name="name">Name?</string>
     <string name="year">Class Standing</string>
+    <string name="default_class">Freshman</string>
+    <string name="go">GO</string>
 </resources>

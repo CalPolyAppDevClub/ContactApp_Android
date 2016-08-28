@@ -15,5 +15,26 @@
         android:padding="5dp"
         android:textSize="28dp"
         />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_text_view"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:text="@string/default_class"
+        />
+    <ProgressBar
+        android:layout_marginTop="30dp"
+        android:id="@+id/class_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_button"
+        android:text="@string/go"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
 </FrameLayout>
