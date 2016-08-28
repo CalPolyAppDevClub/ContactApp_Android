@@ -5,6 +5,12 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * Activity that tells the user they're done with registration
+ *
+ * @author Kris Campos (kcampos0101@gmail.com)
+ * @version 1 - init commit. - Flow established
+ */
 public class DoneActivity extends AppCompatActivity {
 
     private static final long TIME_ON_THIS_ACTIVITY = 3000; // 3 seconds

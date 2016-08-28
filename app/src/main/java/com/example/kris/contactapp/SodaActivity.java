@@ -6,6 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Activity that collects user's favorite soda.
+ *
+ * @author Kris Campos (kcampos0101@gmail.com)
+ * @version 1 - init commit. - Flow established
+ */
 public class SodaActivity extends AppCompatActivity {
 
     @Override
