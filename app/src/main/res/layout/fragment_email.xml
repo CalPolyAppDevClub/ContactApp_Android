@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cal_poly"
     tools:context="com.example.kris.contactapp.fragments.EmailFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -9,11 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/emails"
-
         android:layout_marginTop="100dp"
         android:layout_marginLeft="150dp"
         android:padding="15dp"
-
         android:fontFamily="sans-serif"
         android:textSize="28dp"
         android:textIsSelectable="false"
