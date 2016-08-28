@@ -1,13 +1,16 @@
 package com.example.kris.contactapp.fragments;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.kris.contactapp.MainActivity;
 import com.example.kris.contactapp.R;
 
 /**
@@ -66,6 +69,21 @@ public class SodaFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_soda, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // adding functionality to the UI button
+        Button nextFragmentButton = (Button) getActivity().findViewById(R.id.welcome_next_frag_btn);
+        nextFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // goto done fragment
+                MainActivity.performFragmentTransaction(new DoneFragment());
+            }
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event

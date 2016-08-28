@@ -3,11 +3,15 @@ package com.example.kris.contactapp.fragments;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
+import android.os.CountDownTimer;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.kris.contactapp.MainActivity;
 import com.example.kris.contactapp.R;
 
 /**
@@ -23,6 +27,7 @@ public class DoneFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final long TIME_UNTIL_BACK_TO_WELCOME = 3000; // 3 seconds
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -66,6 +71,22 @@ public class DoneFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_done, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        new CountDownTimer(TIME_UNTIL_BACK_TO_WELCOME, TIME_UNTIL_BACK_TO_WELCOME) {
+
+            public void onTick(long millisUntilFinished) {
+                // do not provide status updates
+            }
+
+            public void onFinish() {
+                MainActivity.performFragmentTransaction(new WelcomeFragment());
+            }
+        }.start();
     }
 
     // TODO: Rename method, update argument and hook method into UI event
