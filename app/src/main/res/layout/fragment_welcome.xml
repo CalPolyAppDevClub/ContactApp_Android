@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_fragment"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginLeft="120dp"
         android:fontFamily="sans-serif"
         android:elegantTextHeight="true"
         android:textSize="28dp"
@@ -22,6 +22,8 @@
         android:id="@+id/welcome_next_frag_btn"
         android:layout_gravity="center"
         android:text="Register"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
         android:textSize="16sp"
         android:textAllCaps="true"/>

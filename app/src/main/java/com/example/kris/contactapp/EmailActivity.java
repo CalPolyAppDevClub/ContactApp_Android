@@ -10,12 +10,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /**
- * Created by kid on 8/27/16.
+ * Activity that ask for the emails
+ *
+ * @author Dung Trinh (dungtrinh1993@gmail.com)
+ * @version 1 - init commit. - Flow established
  */
 public class EmailActivity extends AppCompatActivity {
 
     protected Button goButton;
     protected EditText emailText;
+    /**The string value to check user input*/
     protected String userEmail;
 
     @Override
@@ -23,7 +27,7 @@ public class EmailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.userEmail = "";
         initLayout();
-        //initListener();
+        initListener();
     }
 
     @Override
@@ -31,12 +35,18 @@ public class EmailActivity extends AppCompatActivity {
         super.onStart();
     }
 
+    /**
+     * Init the layout components
+     */
     protected void initLayout() {
         setContentView(R.layout.fragment_email);
         this.goButton = (Button) findViewById(R.id.email_next_button);
         this.emailText = (EditText) findViewById(R.id.email_edit_text);
     }
 
+    /**
+     * Init the listener for all the component
+     */
     protected void initListener() {
         this.goButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +60,6 @@ public class EmailActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), NameActivity.class);
                     startActivity(intent);
                 }
-
             }
         });
     }
