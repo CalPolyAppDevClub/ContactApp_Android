@@ -11,28 +11,35 @@
         android:text="What do you want to write app for?"
         android:layout_marginTop="20dp"
         android:padding="17dp"/>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
+
         <CheckBox android:id="@+id/checkbox_iOS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="iOS"
             android:onClick="onCheckboxClicked"/>
+
         <CheckBox android:id="@+id/checkbox_android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Android"
             android:onClick="onCheckboxClicked"/>
+
         <CheckBox android:id="@+id/checkbox_windows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Windows"
             android:onClick="onCheckboxClicked"/>
+
     </LinearLayout>
+
     <Button
+        android:id="@+id/btn_platform"
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
