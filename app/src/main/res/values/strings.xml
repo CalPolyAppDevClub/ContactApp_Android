@@ -8,4 +8,7 @@
     <string name="year">Class Standing</string>
     <string name="default_class">Freshman</string>
     <string name="go">GO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
