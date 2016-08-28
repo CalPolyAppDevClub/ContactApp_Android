@@ -22,7 +22,7 @@ public class EmailActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.userEmail = "";
         initLayout();
-        initListener();
+        //initListener();
     }
 
     @Override
